@@ -1,0 +1,8 @@
+extends layout
+
+block content   
+    form(action="/new", method="post")
+        input(type="text", name="author", placeholder="John Doe")
+        input(type="text", name="text", placeholder="Your Message...")
+        button(type="submit") 
+            | Submit
